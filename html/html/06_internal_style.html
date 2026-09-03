@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Internal Style 실습</title>
+    <!-- Internal Style : 한 페이지에만 적용되는 스타일링 기법-->
+    <style type="text/css">
+      /* Element Selector (Tag Selector)*/
+      body {
+        /*글자의 굵기 조정 (100~900) 100단위 조절 가능 기본값 400*/
+        font-weight: 100;
+      }
+
+      div {
+        /*글자 색상*/
+        color: #00f;
+        /*글자 크기 조정
+    단위: px, pt, rem, em*/
+        font-size: 2rem;
+        /*박스의 배경색 조정*/
+        background-color: #ff0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>첫 번째 Div</div>
+    <div>두 번째 Div</div>
+    <div>세 번째 Div</div>
+  </body>
+</html>

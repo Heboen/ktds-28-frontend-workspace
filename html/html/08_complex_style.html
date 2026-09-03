@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Complex Style 실습</title>
+    <!-- External Style: 우선 순위가 가장 낫다-->
+    <!--  External Style 적용 방법
+      <link type="text/css" rel="stylesheet" href="css파일의 상대경로"/>
+      -->
+      <link type = "text/css" rel="stylesheet" href="../css/05_external_style.css"
+  </head>
+    <!-- Internal Style: 우선순위가 External Style 보다 높다.-->
+    <style type="text/css">
+        div{
+        font-size: 0.5rem; /*1rem = 16px/ 0.5rem = 8px*/
+        }
+
+    </style>
+
+  <body>
+    <!-- Inline Style: 우선순위가 가장 높다.-->
+    <div style="background-color: #f0f;">첫 번째 Div</div>
+    <div style="color: #a00">두 번째 Div</div>
+    <div style="font-size: 3rem;">세 번째 Div</div>
+  </body>
+</html>
