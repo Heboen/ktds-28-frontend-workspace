@@ -1,0 +1,20 @@
+body {
+  background-color: #000;
+  margin: 0;
+}
+
+.content-box {
+  max-width: 680px;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.title {
+  vertical-align: middle;
+  margin-bottom: 10px;
+  background-color: #ff0;
+  height: 3rem;
+}

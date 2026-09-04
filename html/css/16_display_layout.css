@@ -2,9 +2,12 @@
   box-sizing: border-box;
 }
 
-.layout {
+.menu-bar {
   size: 800px;
   font-size: 0px;
+
+  border-top: 1px solid #000;
+  margin: 0 auto;
 }
 
 .menu-title {
@@ -12,6 +15,7 @@
   font-weight: 600;
   font-size: 1rem;
   margin-right: 19px;
+  vertical-align: middle;
 }
 
 .menu-item {
@@ -24,10 +28,11 @@
   color: #666;
   font-size: 1rem;
   font-weight: 600;
+  vertical-align: middle;
 }
 
 .comment {
-  padding-left: 300px;
+  text-align: center;
   font-size: 0.9rem;
   margin: 30px 0;
 }
