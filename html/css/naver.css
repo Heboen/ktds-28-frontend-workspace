@@ -67,15 +67,27 @@ body {
 }
 .write-date,
 .like,
-.comment {
+.comment,
+.like-count,
+.comment-count {
   font-size: 0.825rem;
   letter-spacing: -0.05em;
   color: var(--write-date-font-color);
 }
 .like,
-.comment {
-  margin: 0 5px;
+.like-count,
+.comment,
+.comment-count {
+  margin: 0 2px;
 }
+
+.like-count {
+  margin-right: 4px;
+}
+.comment {
+  margin-left: 5px;
+}
+
 .article-title {
   font-size: 1.1rem;
   text-overflow: ellipsis;
