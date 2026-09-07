@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  /* font-size: 0; */
+}
+.absolute-top-left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  background-color: aqua;
+
+  padding: 10px;
+  border: 2px solid #000;
+}
+.absolute-top-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  background-color: aqua;
+
+  padding: 10px;
+  border: 2px solid #000;
+}
+.absolute-bottom-left {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  background-color: aqua;
+
+  padding: 10px;
+  border: 2px solid #000;
+}
+.hide {
+  display: none;
+}
+.absolute-bottom-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+
+  background-color: aqua;
+
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+.fixed-top-left {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  background-color: aqua;
+
+  padding: 10px;
+  border: 2px solid #000;
+}
+.fixed-top-right {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+
+  background-color: aqua;
+
+  padding: 10px;
+  border: 2px solid #000;
+}
+.fixed-bottom-left {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+  background-color: aqua;
+
+  padding: 10px;
+  border: 2px solid #000;
+}
+.hide {
+  display: none;
+}
+.fixed-bottom-right {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+
+  background-color: aqua;
+
+  padding: 10px;
+  border: 2px solid #000;
+}
+.relative-1 {
+  position: relative;
+
+  width: 200px;
+  border: 2px solid #000;
+  background-color: blanchedalmond;
+}
+.relative-2 {
+  position: relative;
+  top: 10px;
+  left: 10px;
+
+  width: 200px;
+  border: 2px solid #000;
+  background-color: blanchedalmond;
+}
+.relative-3 {
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+
+  width: 200px;
+  border: 2px solid #000;
+
+  background-color: blanchedalmond;
+}
+.relative-box {
+  position: relative;
+
+  font-size: 1.12rem;
+
+  width: 300px;
+  height: 600px;
+
+  padding: 10px;
+  border: 2px solid #000;
+
+  background-color: aquamarine;
+}
+.relative-box:hover > .absolute-box {
+  top: 0px;
+}
+.absolute-box {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+  padding: 10px;
+
+  background-color: #0006;
+  color: #fff;
+}
+
+.img-box {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border: 1px solid #000;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+
+    vertical-align: bottom;
+  }
+
+  & > div {
+    font-size: 1rem;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    padding: 5px 0;
+
+    background-color: #ff07;
+    color: #fff;
+    text-align: center;
+  }
+
+  &:hover > div {
+    top: 0px;
+    padding: 48% 0;
+    vertical-align: middle;
+  }
+}
+
+.hover-box {
+  margin-top: 1rem;
+
+  position: relative;
+
+  width: 200px;
+  height: 400px;
+  background-color: aqua;
+
+  & > div {
+    position: absolute;
+  }
+
+  & > .hidden {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ccc;
+  }
+
+  &:hover {
+    & > .normal {
+      display: none;
+    }
+    & > .hidden {
+      display: inline-block;
+    }
+  }
+}
+
+.guide-section {
+  & > h3 {
+    margin: 0;
+    padding-top: 60px;
+  }
+  & > ul {
+    position: sticky;
+    top: 10px;
+
+    background-color: #fff;
+
+    padding: 10px 0;
+    border: 1px solid #000;
+    margin: 0;
+
+    & > li {
+      display: inline-block;
+      margin: 0 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
