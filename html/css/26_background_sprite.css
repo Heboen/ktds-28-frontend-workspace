@@ -1,0 +1,33 @@
+.papago {
+  width: 135px;
+  height: 135px;
+
+  /* 백그라운드 이미지 지정 */
+  background-image: url(../img/naver_sprite.png);
+  /* 백그라운드 이미지 반복 X */
+  background-repeat: no-repeat;
+  /* 백그라운드 이미지 위치 조정 */
+  background-position: -2px 0px;
+}
+.smart-store-light {
+  width: 145px;
+  height: 145px;
+
+  /* 백그라운드 이미지 지정 */
+  background-image: url(../img/naver_sprite.png);
+  /* 백그라운드 이미지 반복 X */
+  background-repeat: no-repeat;
+  /* 백그라운드 이미지 위치 조정 */
+  background-position: -160px 1px;
+}
+.smart-store-dark {
+  width: 145px;
+  height: 145px;
+
+  /* 백그라운드 이미지 지정 */
+  background-image: url(../img/naver_sprite.png);
+  /* 백그라운드 이미지 반복 X */
+  background-repeat: no-repeat;
+  /* 백그라운드 이미지 위치 조정 */
+  background-position: 0 -139px;
+}
