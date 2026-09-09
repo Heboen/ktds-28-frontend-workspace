@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+input[type="email"] {
+  width: 75%;
+
+  font-size: 0.9rem;
+  padding: 10px;
+  border: 0;
+}
+
+input[type="password"] {
+  width: 75%;
+
+  font-size: 0.9rem;
+  padding: 10px;
+  border: 0;
+}
+
+input[type="text"] {
+  width: 75%;
+
+  font-size: 0.9rem;
+  padding: 10px;
+  border: 0;
+}
+input[type="tel"] {
+  width: 75%;
+
+  font-size: 0.9rem;
+  padding: 10px;
+  border: 0;
+}
+
+.email-info {
+  & div {
+    border: 1px solid #ccc;
+    /* text-align: center; */
+    padding: 2px 10px;
+    /* border-radius: 10px; */
+  }
+
+  & > div:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  & > div:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  & > .user-id {
+  }
+  & > div ~ {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+label:has(+ input[id="userid"]) {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/naver_sprite.png);
+  background-size: 700px 700px;
+  background-repeat: no-repeat;
+  background-position: -130px -645px;
+}
+label:has(+ input[id="user-password"]) {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/naver_sprite.png);
+  background-size: 700px 700px;
+  background-repeat: no-repeat;
+  background-position: -130px -645px;
+}
+label:has(+ input[id="user-email"]) {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/naver_sprite.png);
+  background-size: 700px 700px;
+  background-repeat: no-repeat;
+  background-position: -130px -645px;
+}
+label:has(+ input[id="username"]) {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/naver_sprite.png);
+  background-size: 700px 700px;
+  background-repeat: no-repeat;
+  background-position: -130px -645px;
+}
+label:has(+ input[id="user-birthday"]) {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/naver_sprite.png);
+  background-size: 700px 700px;
+  background-repeat: no-repeat;
+  background-position: -130px -645px;
+}
+label:has(+ input[id="user-phone-broad"]) {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/naver_sprite.png);
+  background-size: 700px 700px;
+  background-repeat: no-repeat;
+  background-position: -130px -645px;
+}
+label:has(+ input[id="userphone"]) {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/naver_sprite.png);
+  background-size: 700px 700px;
+  background-repeat: no-repeat;
+  background-position: -130px -645px;
+}
+
+.user-id::after {
+  float: right;
+  content: "@naver.com";
+  color: #ccc;
+}
+
+.user-info {
+  margin-top: 10px;
+  & > div {
+    border: 1px solid #ccc;
+    /* text-align: center; */
+    padding: 0 10px;
+    /* border-radius: 10px; */
+  }
+  & > .user-broad {
+    text-align: center;
+  }
+
+  & > div:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  & > div:last-of-type {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+label + input[type="radio"] {
+  display: none;
+}
+.radios {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 10px;
+  text-align: center;
+}
+.input-area {
+  font-size: 0;
+  display: inline-block;
+  width: 49%;
+
+  & > .input-field {
+    display: inline-block;
+    border: 0;
+  }
+
+  & label {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 4px 1rem;
+
+    &[for="male"],
+    &[for="local"] {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    &[for="female"],
+    &[for="foriegn"] {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+}
+/* 선택된 radio의 label 스타일 */
+label:has(+ input[type="radio"]:checked) {
+  color: #5f5;
+  border: 1px solid #5f5;
+}
+/* 선택되지 않은 radio의 label 스타일 */
+label:has(+ input[type="radio"]:not(:checked)) {
+  color: #bbb;
+  border: 1px solid #bbb;
+}
+
+.agreement {
+  margin: 10px 0;
+  padding: 5px 10px;
+
+  border: 1px solid #bbb;
+  border-radius: 10px;
+
+  width: 100%;
+  display: inline-block;
+
+  & > span {
+    color: #5f5;
+    font-size: 0.8rem;
+  }
+  & > div {
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+}
+label:has(+ input[id="agree"]:checked) {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/naver_sprite.png);
+  background-size: 700px 700px;
+  background-repeat: no-repeat;
+  background-position: -130px -645px;
+}
+label:has(+ input[id="agree"]:not(:checked)) {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/naver_sprite.png);
+  background-size: 700px 700px;
+  background-repeat: no-repeat;
+  background-position: -670px -655px;
+}
+label + input[type="checkbox"] {
+  display: none;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../css/clone_naver_sign_up.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="email-info">
+            <div class="user-id">
+                <label for="userid"></label>
+                <input id="userid" type="text" placeholder="아이디" required/>
+            </div>
+            <div class="user-pass">
+                <label for="user-password"></label>
+                <input id="user-password" type="password" placeholder="비밀번호" minlength="8" maxlength="15" required/>
+            </div>
+            <div class="user-mail">
+                <label for="user-email"></label>
+                <input id="user-email" type="email" placeholder="[선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)"/>
+            </div>
+        </div>
+        <div class="user-info">
+            <div class="user-name">
+                <label for="username"></label>
+                <input id="username" type="text" placeholder="아이디" required/>
+            </div>
+            <div class="user-birth">
+                <label for="user-birthday"></label>
+                <input id="user-birthday" type="text" placeholder="생년월일 8자리"/>
+            </div>
+            <div class="user-broad">
+                <label for="user-phone-broad"></label>
+                <select name="broadcast" id="user-phone-broad">
+                    <option value="skt">SKT</option>
+                    <option value="kt">KT</option>
+                    <option value="lg">LG</option>
+                </select>
+            </div>
+             <div class="radios">
+                <div class="input-area">
+                <div class="input-field">
+                    <label for="male">남자</label>
+                    <input type="radio" name="gender" id="male" checked/>
+                </div>
+                <div class="input-field">
+                    <label for="female">여자</label>
+                    <input type="radio" name="gender" id="female"/>
+                </div>
+                </div>
+                <div class="input-area">
+                    <div class="input-field">
+                        <label for="local">내국인</label>
+                        <input type="radio" name="country" id="local" checked/>
+                    </div>
+                    <div class="input-field">
+                        <label for="foriegn">외국인</label>
+                        <input type="radio" name="country" id="foriegn"/>
+                    </div>
+                </div>
+             </div>
+                <div class="user-phone">
+                    <label for="userphone"></label>
+                <input id="userphone" type="tel" placeholder="휴대전화번호"/>
+                </div>
+            </div>
+
+            <div class="agreement">
+                <label for="agree"></label>
+                <input type="checkbox" name="agree-terms" id="agree"/>
+                <span>[필수]</span>
+                <div>인증 약관 전체동의</div>
+            </div>
+        </div>
+</body>
+</html
