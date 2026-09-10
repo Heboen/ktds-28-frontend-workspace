@@ -248,3 +248,12 @@ label:has(+ input[id="agree"]:not(:checked)) {
 label + input[type="checkbox"] {
   display: none;
 }
+.user-broad > select {
+  width: 75%;
+  height: 100%;
+
+  border: 0;
+}
+.user-broad {
+  height: 38px;
+}
